@@ -46,10 +46,12 @@ const showDetails = (idMeal)=>{
 }
 
 const mobail = (data)=>{
-    const mobailTitle = document.getElementById('staticBackdropLabel');
-    mobailTitle.innerText = data.strMeal;
+    const modailTitle = document.getElementById('staticBackdropLabel');
+    modailTitle.innerText = data.strMeal;
     const modailBody = document.getElementById('modail-body');
     modailBody.innerText = data.strInstructions;
+    const modailImg = document.getElementById('modail-img');
+    modailImg.src = `${data.strMealThumb}`;
 }
 
 loadData();
